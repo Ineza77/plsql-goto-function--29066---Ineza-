@@ -1,1 +1,14 @@
+SET SERVEROUTPUT ON;
 
+DECLARE
+    v_num NUMBER := &enter_number;
+BEGIN
+    IF v_num > 0 THEN
+        DBMS_OUTPUT.PUT_LINE('POSITIVE');
+    ELSIF v_num < 0 THEN
+        DBMS_OUTPUT.PUT_LINE('NEGATIVE');
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('ZERO');
+    END IF;
+END;
+/
